@@ -1,0 +1,129 @@
+body {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    background-color: rgb(224, 219, 226);
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7.5vh;
+}
+
+main > form > label {
+    padding: 0 5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(26, 26, 28);
+    user-select: none;
+}
+
+#pais {
+    width: 35vw;
+    padding: 1vh 0;
+    margin: 5vh 0;
+    border-radius: 1vh;
+    font-size: 25px;
+    text-align: center;
+}
+
+#info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.2s linear;
+}
+
+#info > h1 {
+    margin: 2vh 0;
+    font-family: monospace;
+    color: rgb(26, 26, 28);
+}
+
+#info > img {
+    margin: 2vh 0;
+}
+
+#info > p {
+    padding: 3vh 7.5vw;
+    font-size: 2vw;
+}
+
+#submit {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 3vh;
+    border-radius: 1vh;
+    background-color:rgb(210, 186, 220);
+    transition: 0.1s linear;
+    box-shadow: -5px 5px gray;
+    user-select: none;
+}
+
+#submit:hover {
+    transform: scale(1.05);
+}
+
+#submit:active {
+    transform: scale(1);
+    box-shadow: none;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+@media (orientation: landscape){
+    main > form > label {
+        font-size: 10vw;
+    }
+
+    #pais {
+        width: 35vw;
+    }
+
+    #info > h1 {
+        font-size: 8vw;
+    }
+
+    #info > img {
+        width: 40vh;
+    }
+
+    #info > p {
+        font-size: 2vw;
+    }    
+}
+
+@media (orientation: portrait){
+    main > form > label {
+        font-size: 15vw;
+    }
+
+    #pais {
+        width: 50vw;
+    }
+
+    #info > h1 {
+        font-size: 12vw;
+    }
+
+    #info > img {
+        width: 50vw;
+    }
+
+    #info > p {
+        font-size: 2vh;
+    }    
+}
